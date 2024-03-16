@@ -7,17 +7,14 @@ public class Main {
         Book harryPotterAndTheGobletOfFire = new Book("Гарри Поттер и Кубок огня", rowling, 2003);
         Book crimeAndPunishment = new Book("Преступление и наказание", dostoevsky, 1866);
 
-        print(harryPotterAndTheGobletOfFire);
-        print(crimeAndPunishment);
+        System.out.println(harryPotterAndTheGobletOfFire);
+        System.out.println(crimeAndPunishment);
 
         crimeAndPunishment.setPublishingYear(2024);
-        print(crimeAndPunishment);
+        System.out.println(crimeAndPunishment);
     }
 
     private static void print(Book book) {
-        System.out.println(
-                "Автор: " + book.getAuthor().getName() + " " + book.getAuthor().getSurname() +
-                        ", название: " + book.getTitle() + ", год публикации: " + book.getPublishingYear()
-        );
+        System.out.println(book);
     }
 }
